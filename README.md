@@ -1,0 +1,32 @@
+# Housing Valuation Agent
+
+Ovaj projekat je implementacija inteligentnog softverskog agenta za procjenu nekretnina, razvijena kao dio predmeta Umjetna Inteligencija.
+
+## 🚀 Brzo Pokretanje (Windows)
+
+Najlakši način za pokretanje aplikacije je korištenje priložene skripte:
+
+1.  Pronađite fajl **`start_app.bat`** u ovom folderu.
+2.  Dupli klik na njega.
+3.  Otvorit će se dva crna prozorčića (Backend i Frontend). **Ne zatvarajte ih!**
+4.  Aplikacija će se automatski otvoriti u vašem browseru na: `http://localhost:5173`
+
+---
+
+## 🏗️ Tehnička Struktura
+
+Projekat prati "Clean Architecture":
+
+*   `core/` - Osnovni interfejsi agenta.
+*   `shared/` - Poslovna logika, entiteti i ML modeli.
+*   `web/` - FastAPI server.
+*   `frontend/` - React aplikacija.
+
+## 📦 Zahtjevi
+
+*   Python 3.10+
+*   Node.js (v18+)
+
+Ako pokrećete ručno:
+1.  Backend: `py -m uvicorn web.main:app --reload`
+2.  Frontend: `cd frontend` -> `npm run dev`

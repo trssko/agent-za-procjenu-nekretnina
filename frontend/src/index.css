@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #8D7B68;
+  /* Modern Taupe/Brown */
+  --color-secondary: #C8B6A6;
+  /* Soft Beige */
+  --color-accent: #F1DEC9;
+  /* Light Cream */
+}
+
+body {
+  /* Modern Beige Gradient */
+  background: linear-gradient(135deg, #E6DCCD 0%, #C9B29C 100%) !important;
+  background-attachment: fixed !important;
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #1c1917;
+  /* Stone-900 */
+}
